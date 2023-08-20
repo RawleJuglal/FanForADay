@@ -4,33 +4,34 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 350px;
+    min-height: 80vh;
     color: white;
+    text-shadow:0 2px 2px #131313;
     padding: 45px 23px;
 }
 
 .home-container h1 {
     font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 42px;
+    font-size: var(--XXXVIPX);
+    line-height: var(--XLIIPX);
 }
 
 .home-container p {
-    line-height: 24px;
+    line-height: var(--XXIVPX);
 }
 
 .home-container a {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    background-color: #FF8C38;
+    background-color: var(--blue);
     border: none;
     width: 100%;
-    margin-top: 27px;
-    padding-block: .75rem;
+    margin-top: var(--XXVIIPX);
+    padding-block: var(--XIIPX);
     color: white;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: var(--VPX);
     cursor: pointer;
     transition: transform .1s ease-in-out;
 }

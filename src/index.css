@@ -51,10 +51,27 @@ table {
     box-sizing: border-box;
 }
 
+:root{
+    font-size:16px;
+    --yellow:#fed700;
+    --blue:#21b0fe;
+    --green:#09f04a;
+    --VPX:.3125rem;
+    --XPX:.625rem;
+    --XIIPX:.75rem;
+    --XXPX:1.25rem;
+    --XXIIPX:1.375rem;
+    --XXIVPX:1.5rem;
+    --XXVPX:1.5625rem;
+    --XXVIIPX:1.6875rem;
+    --XXXVIPX:2.25rem;
+    --XLIIPX:2.625rem;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    background-color: red;
+    background-color: white;
     font-family: "Inter", sans-serif;
 }
 
@@ -67,25 +84,31 @@ body {
   scrollbar-width: none;
 }
 
+/*Utility Classes*/
+.flex{display:flex;}
+.flex-column{flex-direction: column;}
+.flex-wrap{flex-wrap:wrap}
+.flex-center{justify-content: center;}
+.flex-align-center{align-items: center;}
+
 header {
     display: flex;
     align-items: center;
-    padding-block: 10px;
+    padding-block: var(--XPX);
+    background: rgb(9,240,74);
+    background: linear-gradient(0deg, rgba(9,240,74,0.44021358543417366) 0%, rgba(9,240,74,1) 100%);
 }
 
 header .site-logo {
-    color: black;
     margin-right: auto;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 25px;
+    font-size: var(--XXVPX);
 }
 
 header a {
     text-decoration: none;
     color: #4D4D4D;
     font-weight: 600;
-    padding: 5px 20px;
+    padding: var(--VPX) var(--XXPX);
 }
 
 header a:hover {
@@ -98,10 +121,10 @@ header a:hover {
     text-align: center;
     text-decoration: none;
     border: none;
-    padding: .75rem 1.375rem;
+    padding: var(--XIIPX) var(--XXIIPX);
     color: initial;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: var(--VPX);
     cursor: pointer;
     transition: transform .1s ease-in-out;
 }

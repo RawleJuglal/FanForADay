@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -56,16 +56,23 @@ table {
     --yellow:#fed700;
     --blue:#21b0fe;
     --green:#09f04a;
+    --black:#131313;
+    --white:#FFF;
     --VPX:.3125rem;
     --XPX:.625rem;
     --XIIPX:.75rem;
     --XXPX:1.25rem;
     --XXIIPX:1.375rem;
+    --XXIIIPX:1.4375rem;
     --XXIVPX:1.5rem;
     --XXVPX:1.5625rem;
     --XXVIIPX:1.6875rem;
+    --XXXIIPX:2rem;
     --XXXVIPX:2.25rem;
+    --XXXVIIPX:2.3125rem;
+    --XXXVIIIPX:2.375rem;
     --XLIIPX:2.625rem;
+    --LVPX:3.4375rem;
 }
 
 html, body {

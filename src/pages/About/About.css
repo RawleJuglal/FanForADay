@@ -1,0 +1,44 @@
+.about-hero-image {
+    max-width:100%;
+}
+
+.about-page-content {
+    padding-inline: var(--XXIIIPX);
+    color:var(--black);
+    margin-bottom: var(--LVPX);
+}
+
+.about-page-content h1 {
+    margin-bottom:var(--XIIPX);
+}
+
+.about-page-content p {
+    line-height: var(--XXIIPX);
+}
+
+.about-page-cta {
+    background-color: #FFCC8D;
+    color: var(--black);
+    padding-inline: var(--XXXIIPX);
+    padding-bottom: var(--XXXIIPX);
+    margin-inline: var(--XVIIPX);
+    border-radius: var(--VPX);
+}
+
+.about-page-cta h2 {
+    margin: 0;
+    padding-block:var(--XXXVIIPX);
+}
+
+.about-page-cta .link-button {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: var(--XPX);
+}
+
+@media (min-width:420px){
+    .about-page-content h1 {
+        line-height: var(--XXXVIIIPX);
+        margin-bottom:unset;
+    }
+}
